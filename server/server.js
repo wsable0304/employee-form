@@ -9,11 +9,12 @@ app.use(require("./routes/record"));
 // DB Driver connection
 const dbo = require("./db/conn");
 
-//use express static file
-if(process.env.NODE_ENV === 'production'){
+//Heroku...use express static file
+if(process.env.NODE_ENV == 'production'){
     app.use(express.static('client/build'));
+    const path=require("path");
     app.get("*",(req,res)=>{
-        res.sendDile(path.resolve(_dirname,'client','build','index.html'));
+        res.sendFile(path.resolve(_dirname,'client','build','index.html'));
     })
 }
 
