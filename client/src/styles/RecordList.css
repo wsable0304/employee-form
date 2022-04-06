@@ -1,0 +1,50 @@
+.list{
+    margin-left: 31%;
+    width: 40%;
+    padding: 30px;
+    background-color: rgb(208, 205, 205);
+    margin-top: 3%;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+    font-family:'Times New Roman', Times, serif;
+    border: 2px solid black;
+}
+.btn1{
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:10%;
+    box-sizing: border-box;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: #6477e0;
+}
+
+.items{
+    
+    margin: 20px;
+    font-size: 18px;
+    text-align: left;
+   
+   
+}
+
+td{
+    padding: 4px;
+    text-align: left;
+   
+    
+}
+#count{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px;
+}
